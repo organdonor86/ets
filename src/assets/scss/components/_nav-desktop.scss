@@ -1,0 +1,44 @@
+
+
+// Actual nav bar across top
+
+.nav-desktop {
+  background-color: $primary-color;
+  /*box-shadow: 0px 10px 52px 9px rgba(0,0,0,0.75);
+  z-index: 10;*/
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  color: lighten($primary-color, 30%);
+  font-size: 1rem; 
+
+  @media (max-width: 940px) {
+    display: none;
+  }
+
+}
+
+
+// Individual anchor tag links
+.menu > li > a {
+  color: $secondary-color;
+  /* Line height inherited from classes above won't work with block level elements, only works with inline elements 
+    Behaves like an inlibe element but you can apply styling like padding etc */
+  // display: inline-block;  
+  /* Makes clickable area full height of navbar */
+  line-height: 80px;
+  /* Padding was pushing element down off of navbar, leave left and right for menu item spacing */
+  padding-top: 0;
+  padding-bottom: 0; 
+  &:hover {
+    /* Applies a very thin white, makes whatever color is behind a touch lighter  */
+    background-color: $text-bg-light;
+    color: rgba(200, 200, 200, 1);
+    }
+  }
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+/*=====================================================================
+
+FOOTER
+
+=====================================================================*/
+
+footer {  
+  background-color: rgba($main-blue, 0.25);
+  /* Same padding as other sections for consistency and because it works */
+  padding: 40px 0px; 
+  font-size: 1rem;
+
+  @media (max-width: 939px) {
+    padding: 80px 0px;  
+    font-size: 1.6rem;
+    }
+
+
+
+  h4 {
+    color: $secondary-color;
+    /*margin-bottom: 0;*/
+    font-size: 0.7em;
+    }
+
+  span {
+    display: block;
+    font-weight: bold;
+    color: ($secondary-color, 1);
+
+    a {    
+      color: rgba($secondary-color, 0.6);
+      font-size: 0.6em;
+      &:hover {
+        color: rgba($secondary-color, 1);
+        font-size: 2em;
+        }
+      }
+    }
+
+  hr {
+    border-color: rgba($secondary-color, 0.2); 
+    margin: 10px 0;
+    }
+
+  div {
+    margin-bottom: 35px;
+    @media (min-width: 639px) {
+      margin-bottom: 0;
+      }
+    }
+    
+  ul {
+    list-style-type: none;
+    } 
+
+  .column {
+    text-align: center;
+    }
+  }
+
+
+
+
+

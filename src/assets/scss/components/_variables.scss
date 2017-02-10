@@ -1,0 +1,26 @@
+// Color Palette
+
+$primary-color: rgba(255, 255, 255, 1);
+$secondary-color: rgba(0, 0, 0, 1);
+
+$main-blue: #22337c;
+
+$contact-bg: #dfdfdf;
+
+$text-bg-light: rgba($secondary-color, 0.5);
+
+$burger-color: lighten($secondary-color, 50%);
+$burger-color-hover: $secondary-color;
+
+
+
+
+
+
+// Logo Sizing
+
+$logo-width-s: 215.739px;
+$logo-height-s: 34.41px;
+
+$logo-width: ($logo-width-s * 0.7);
+$logo-height: ($logo-height-s * 0.7);
