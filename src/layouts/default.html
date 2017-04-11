@@ -6,23 +6,33 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>ets medical</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
+
+
+    <!-- <link rel="stylesheet" href="{{root}}assets/scss/font-awesome-4.7.0/css/font-awesome.css"> -->
+
+    <!-- <link rel="stylesheet" href="//basehold.it/22"> -->
+
 
     <script src="https://use.typekit.net/ngh4nci.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+
+
   </head>
   <body>
+  <div class="foot-wrap">
 
     <div class="off-canvas-wrapper">
-      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
 
         <!-- OFF CANVAS MENU -->
-        <ul>
-          <li><a href="#">Services</a></li>
-          <li><a href="./fleet.html">Fleet</a></li>
-          <li><a href="#">Contact</a></li>          
+        <ul class="off-canvas-ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./fleet.html">Fleet</a></li>          
         </ul>
 
       </div>
@@ -32,9 +42,8 @@
         <!--  MOBILE NAVIGATION   -->   
       <div class="title-bar">
           <div class="wrap">
-          <div class="title-bar-left">
-            <!-- <button class="menu-icon" type="button" data-open="offCanvas"></button> -->
-            <div class="site-logo"></div>
+          <div class="title-bar-left">            
+            <a href="./index.html"><div class="site-logo"></div></a>
           </div>         
           <div class="title-bar-right">
             <button class="menu-icon" type="button" data-open="offCanvas"><a class="menu-icon-bar"></a> </span></button>
@@ -46,14 +55,13 @@
       <nav class="top-bar nav-desktop">
         <div class="wrap">
           <div class="top-bar-left">        
-              <div class="site-logo"></div>        
+              <a href="./index.html"><div class="site-logo"></div></a>        
           </div>
           <div class="top-bar-right">
             <ul class="menu menu-desktop">
-              <li><a href="#">Services</a></li>
-              <li><a href="./fleet.html">Fleet</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./fleet.html">Fleet</a></li>                
             </ul>
           </div>
         </div>
@@ -64,29 +72,31 @@
 
 
       <!--  FOOTER SECTION   -->
-      <footer>
-        <div class="wrap row small-up-1 medium-up-2">
-          <div class="column">
-            <h4>Contact Info</h4>
-            <hr>
-            <span>Phone<a href="#"> 999 999 9999</a></span>
-            <a href="#"><span>Email</span> xxx</a>
-            <a href="#"><span>Address</span> xxx</a>
+       <footer>
+        <!-- <div class="row">
+          <div class="small-6 column">
+            <ul class="foot-menu contact-column">
+              <li><h4>Contact Info</h4></li>    
+              <li><hr></li>
+               <li>Phone <a href="#"> 999 999 9999</a></li>
+              <li>Email <a href="#"> xxx@lala.la</a></li>
+              <li>Address <a href="#"> 123 Far Place</a></li> 
+            </ul>            
           </div>
-          <div class="column">
-            <h4>Site Map</h4>
-            <hr>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+          <div class="small-6 column">
             <ul class="foot-menu">
+              <li><h4>Site Map</h4></li>    
+              <li><hr></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li> 
             </ul>
           </div>           
-        </div>
-      </footer>
+        </div> -->
+      </footer> 
 
+
+  </div>
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

@@ -4,14 +4,107 @@
   outline: none;
 }
 
-body {
+html, body {
   font-size: 16px;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "acumin-pro",sans-serif;
+
+}
+
+
+
+
+
+/************************
+
+  TYPOGRAPHY
+
+************************/
+
+
+
+// Body Copy for mobile
+// Get larger as screen gets wider
+
+
+// Subheadings for services and fleet pages
+// Get larger as screen gets wider
+
+
+
+
+
+
+
+.main-section {
+  padding: 0;
+  // background-color: $primary-color;
+  color: $body-text-color;
+  min-height: 480px;
+
+  // margin-top: 30px;
+    @media (min-width: 1024px) {
+      // margin-top: 117px;
+    }
+
+  p {
+    // width: 90%;
+    max-width: 370px;
+    // padding-top: 7px;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    line-height: 1.625;
+    @media (min-width: 490px) {
+      max-width: 500px;
+      font-size: 1.0rem;
+    }
+    @media (min-width: 939px) {
+      max-width:500px;      
+      }
+    margin-bottom: 26px;
+   }
+
+  li {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    @media (min-width: 490px) {
+      max-width: 500px;
+      font-size: 1.0rem;
+    }
+    @media (min-width: 939px) {
+      max-width:450px;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot-wrap {
+  min-height: 100%;
+  position: relative;
 }
 
 
 .wrap {
-  width: 85%;
-  max-width: 1100px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 
   @media (min-width: 500px) {
@@ -22,17 +115,17 @@ body {
 
 // Logo used in both navbars
 
-.site-logo {  
+.site-logo {
   background-image: url(../img/logoo-04.svg);
   background-size: cover;
-  height: $logo-height;
-  width: $logo-width;
-  margin-top: 6px;
+  height: $logo-height-s;
+  width: $logo-width-s;
+  margin-top: 7px;
 
-  @media (min-width: 939px) {
-    height: ($logo-height * 1.2);
-    width: ($logo-width * 1.2);
-    margin-top: 20px;
+  @media (min-width: 750px) {
+    height: $logo-height;
+    width: $logo-width;
+    margin-top: 31px;
   	}
   }
 

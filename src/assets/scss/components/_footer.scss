@@ -5,38 +5,52 @@ FOOTER
 =====================================================================*/
 
 footer {  
-  background-color: rgba($main-blue, 0.25);
+  background-color: $footer-bg;
   /* Same padding as other sections for consistency and because it works */
-  padding: 40px 0px; 
-  font-size: 1rem;
+  // padding: 80px 0px; 
+  font-size: 0.4rem;
 
-  @media (max-width: 939px) {
-    padding: 80px 0px;  
-    font-size: 1.6rem;
+  height: 60px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  // clear: both;
+  
+
+  @media (min-width: 1024px) {
+    // position: absolute;
+    width: 100%;
+    bottom: 0;
     }
 
-
+  @media (min-width: 939px) {
+    // padding: 40px 0px;  
+    font-size: 0.7rem;
+    }
 
   h4 {
-    color: $secondary-color;
+    color: lighten($secondary-color, 15%);
     /*margin-bottom: 0;*/
-    font-size: 0.7em;
+    font-size: 1.3em;
+    max-width: 450px;
+    margin: auto;
+
     }
 
-  span {
-    display: block;
-    font-weight: bold;
-    color: ($secondary-color, 1);
+  
 
-    a {    
+  a {    
+    color: lighten($secondary-color, 15%);
+    // font-size: 0.6em;
+    display: inline-block;     
+    
+    &:hover {
       color: rgba($secondary-color, 0.6);
-      font-size: 0.6em;
-      &:hover {
-        color: rgba($secondary-color, 1);
-        font-size: 2em;
-        }
+      // font-size: 2em;
       }
     }
+    
 
   hr {
     border-color: rgba($secondary-color, 0.2); 
@@ -44,7 +58,7 @@ footer {
     }
 
   div {
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
     @media (min-width: 639px) {
       margin-bottom: 0;
       }
@@ -52,12 +66,27 @@ footer {
     
   ul {
     list-style-type: none;
-    } 
+    margin: 0;
+
+    li {
+      max-width: 400px;
+      margin: 3px auto;
+    }
+     li:first-child {
+      margin-bottom: 12px;
+     }
+    
+  }
 
   .column {
-    text-align: center;
+    // text-align: center;
+  } 
+
+  .contact-column li {
+      max-width: 450px;      
     }
-  }
+ 
+}
 
 
 

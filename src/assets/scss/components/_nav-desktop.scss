@@ -3,42 +3,84 @@
 // Actual nav bar across top
 
 .nav-desktop {
-  background-color: $primary-color;
-  /*box-shadow: 0px 10px 52px 9px rgba(0,0,0,0.75);
-  z-index: 10;*/
-  height: 80px;
+  background-color: $primary-color;  
+  z-index: 5;
+  height: 96px;
   padding: 0;
   margin: 0;
-  color: lighten($primary-color, 30%);
+  box-shadow: 0px 6px 33px -8px rgba(0,0,0,0.6);
   font-size: 1rem; 
+  position: relative;
 
-  @media (max-width: 940px) {
+  @media (max-width: 750px) {
     display: none;
   }
+
+  
 
 }
 
 
-// Individual anchor tag links
-.menu > li > a {
-  color: $secondary-color;
-  /* Line height inherited from classes above won't work with block level elements, only works with inline elements 
-    Behaves like an inlibe element but you can apply styling like padding etc */
-  // display: inline-block;  
-  /* Makes clickable area full height of navbar */
-  line-height: 80px;
-  /* Padding was pushing element down off of navbar, leave left and right for menu item spacing */
-  padding-top: 0;
-  padding-bottom: 0; 
-  &:hover {
-    /* Applies a very thin white, makes whatever color is behind a touch lighter  */
-    background-color: $text-bg-light;
-    color: rgba(200, 200, 200, 1);
+// Menu container (ul)
+.menu { 
+
+  ul {
+    // height: 96px;
+    // margin-top: 20px;
+  } 
+
+  li { 
+    a {
+      color: rgba($secondary-color, 0.8);
+      /* Line height inherited from classes above won't work with block level elements, only works with inline elements 
+        Behaves like an inlibe element but you can apply styling like padding etc */
+      // display: inline-block;  
+      /* Makes clickable area full height of navbar */
+      // line-height: 96px;
+      /* Padding was pushing element down off of navbar, leave left and right for menu item spacing */
+      margin: 0 20px;
+      padding: 0px 0px;      
+      padding-bottom: 7px; 
+      border-bottom: transparent 2px solid;
+      transition: border 0.35s;
+      transition-property: border, color;
+
+      }
+
+    // .active {
+    //   color: $primary-color;
+    //   background-color: rgba($main-blue, 1);
+    //   transition: all 0.35s;
+    //   }
     }
+
   }
 
 
+.top-bar ul {     
+      background-color: rgba($primary-color, 0.5);       
+    }
 
+.top-bar-right {
+  // height: 96px;
+    margin-top: 38px;
+}
+
+.menu-item
+{
+    // In the transition you define the property that 
+    // you want a transition attached to and the duration
+    // transition: background .15s;
+    // -moz-transition: background .5s; /* Firefox 4 */
+    // -webkit-transition: background .5s; /* Safari and Chrome */
+    // -o-transition: background .5s; /* Opera */
+}
+
+.menu a:hover {
+  // background: $main-blue; // Or whatever color you choose
+  border-bottom: rgba($main-blue, 0.6) 2px solid;
+  color: $secondary-color;
+  }
 
 
 

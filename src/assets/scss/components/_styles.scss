@@ -3,8 +3,19 @@
 
 @import '_globals.scss';
 
+
+
+// These  apply to all pages
+
 @import '_nav-mobile.scss';
 @import '_nav-desktop.scss';
 @import '_hero.scss';
-@import '_main-section.scss';
 @import '_footer.scss';
+
+
+
+// These are specific to certain pages
+
+@import '_index.scss';
+@import './pages/_services.scss';
+@import './pages/_fleet.scss';

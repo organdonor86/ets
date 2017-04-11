@@ -1,0 +1,89 @@
+
+.body-text {
+    margin-top: 48px;
+    @media (min-width: 1024px) {
+      margin-top: 140px;
+      }
+  }
+
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.contact {
+	background-color: $contact-bg;
+  border-radius: 5px;
+  max-width: 400px;
+	margin: 60px auto;
+  margin-bottom: 128px;
+  @media (min-width: 1024px) {
+      margin-top: 78px;
+    }
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 40px 0px;
+
+  h5 {
+
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: darken($body-text-color, 5%);
+    @media (min-width: 490px) {
+        font-size: 1.0em;
+      }
+    }
+
+  h6 {
+    margin: auto;
+    margin-bottom: 5px;
+    color: darken($main-blue, 10%);
+    font-weight: 400;
+    font-size: 1.6em;
+    }
+
+  .email-wrap {
+    margin: auto;
+    text-align: left;
+    // width: 80%;
+    max-width: 200px;
+    @media(min-width: 490px){
+      max-width: 260px;
+    }
+  }
+
+  .email {
+    font-size: 0.8em;
+    margin-top: 15px;
+    @media(min-width: 490px){
+      font-size: 1.1em;
+    }
+  }
+
+  .phone {
+    font-size: 1.9em;
+    @media(min-width: 490px){
+      font-size: 2em;
+    }
+  }
+
+  i {
+      font-size: 0.8em;
+      margin-right: 15px;
+      @media(min-width: 490px){
+        margin-right: 18px;
+      }
+    }
+  }
+
+
+
+.main-section {
+  // width: 90%;
+  margin: auto;
+}
